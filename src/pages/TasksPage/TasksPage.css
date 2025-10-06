@@ -1,0 +1,97 @@
+.columns {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    
+}
+
+.column {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.column__title {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.task {
+    background-color: #dbdbdb;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    height: 150px;
+}
+
+.task__buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+
+.task__button-delete {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 120px;
+    align-self: center;
+}
+
+.task__button-change {
+    background-color: #9e770d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 120px;
+    align-self: center;
+}
+
+.column {
+    min-height: 150px;
+}
+
+.main__title {
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.main__task-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+
+.main__task-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #0c0b0b;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    width: 300px;
+    align-self: center;
+}  
+
+.main__task-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: center;
+}

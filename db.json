@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "id": "67f6",
+      "email": "kethrynwolf1@gmail.com",
+      "password": "skillbox",
+      "name": "Бебебе"
+    },
+    {
+      "id": "4694",
+      "email": "kethrynwolf1@gmail.com",
+      "password": "skillbox",
+      "name": "Бебебе"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "3",
+      "title": "Close book",
+      "status": "finished",
+      "userId": "aec12"
+    },
+    {
+      "id": "6aa3",
+      "title": "123444",
+      "status": "revision",
+      "userId": "aec6"
+    },
+    {
+      "id": "a884",
+      "title": "dfdfg",
+      "status": "completed",
+      "userId": "aec6"
+    }
+  ]
+}
