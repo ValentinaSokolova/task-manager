@@ -1,69 +1,82 @@
-# React + TypeScript + Vite
+# Task Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Простоe веб-приложение для управления задачами в стиле Trello.  
+Позволяет создавать задачи, редактировать их, перемещать между колонками, удалять и отмечать как выполненные.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Возможности
 
-## Expanding the ESLint configuration
+- Регистрация и авторизация пользователей
+- Создание, редактирование и удаление задач
+- Перетаскивание задач между колонками с помощью Drag and Drop
+- Фильтрация задач по статусу: новые, в процессе, требует доработки, выполнено
+- Валидация: одна почта — один аккаунт
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 💻 Технологии
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- React + TypeScript
+- React Router
+- `react-beautiful-dnd` для Drag and Drop
+- REST API (json-server)
+- CSS (рукописный, без Tailwind)
+- LocalStorage для хранения текущего пользователя
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## ⚡ Установка и запуск
+
+1. Клонировать репозиторий:
+
+```bash
+git clone https://github.com/ValentinaSokolova>/task-manager.git
+cd task-manager
+````
+
+2. Установить зависимости:
+
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+3. Запустить сервер JSON:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+npm run server
+```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+4. Запустить приложение:
+
+```bash
+npm run dev
+```
+
+---
+
+## 🛠 Использование
+
+1. Зарегистрироваться новым пользователем
+2. Добавлять задачи через форму
+3. Перетаскивать задачи между колонками
+4. Редактировать или удалять задачи с помощью кнопок
+5. Отмечать задачи как выполненные
+
+---
+
+## ✨ Примечания
+
+* При регистрации проверяется уникальность email
+* Drag and Drop работает без Strict Mode
+* Все изменения синхронизируются с сервером json-server
+* Стили выполнены вручную с помощью CSS
+
+```
+
+---
+
+Если хочешь, я могу сразу сделать **расширенную версию README с картинками интерфейса, примерами задач и кнопок**, чтобы он выглядел красиво на GitHub.  
+
+Хочешь, чтобы я это сделал?
 ```
